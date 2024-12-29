@@ -1,0 +1,52 @@
+/* Shared responsive styles */
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.section-spacing {
+  @apply py-12 sm:py-16 md:py-20 lg:py-24;
+}
+
+.responsive-grid {
+  @apply grid gap-6 sm:gap-8 
+         grid-cols-1 
+         sm:grid-cols-2 
+         lg:grid-cols-3 
+         xl:grid-cols-4;
+}
+
+.card-base {
+  @apply p-4 sm:p-6 
+         rounded-xl 
+         transition-all duration-300;
+}
+
+.heading-primary {
+  @apply text-3xl sm:text-4xl md:text-5xl 
+         font-bold 
+         leading-tight;
+}
+
+.heading-secondary {
+  @apply text-2xl sm:text-3xl 
+         font-semibold 
+         leading-tight;
+}
+
+.text-body {
+  @apply text-base sm:text-lg 
+         leading-relaxed;
+}
+
+/* Responsive animations */
+@screen sm {
+  .animate-float {
+    animation-duration: 20s;
+  }
+}
+
+@screen lg {
+  .animate-float {
+    animation-duration: 25s;
+  }
+}
